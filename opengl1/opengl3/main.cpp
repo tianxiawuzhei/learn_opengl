@@ -115,7 +115,7 @@ int main()
         
         -1.0f, -1.0f, 0.0f,   // 右上角
         1.0f, -1.0f, 0.0f,   // 右上角
-        0.0f, 0.0f, 0.0f,  // 左上角
+        0.0f, -0.5f, 0.0f,  // 左上角
     };
 
     unsigned int VBO, VAO;
@@ -146,6 +146,7 @@ int main()
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (GLvoid*)(9 * sizeof(GL_FLOAT)));
+    glEnableVertexAttribArray(0);
     
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
@@ -177,7 +178,6 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 3);
         // glBindVertexArray(0); // no need to unbind it every time
  
-        glUseProgram(shaderProgram);
         glBindVertexArray(VAO1);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)

@@ -11,6 +11,13 @@
 		A23BFF5C25AC029D00B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
 		A23BFF6725AC043700B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
 		A23BFF6825AC043D00B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
+		A23BFF7025AC1C4400B80EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF6F25AC1C4400B80EA8 /* main.cpp */; };
+		A23BFF7625AC1C7E00B80EA8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
+		A23BFF7925AC2CF500B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A23BFF7A25AC2CF500B80EA8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
+		A23BFF7C25AC2D0D00B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A23BFF7D25AC2D1000B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
+		A23BFF7F25AC2F5C00B80EA8 /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +30,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A23BFF6B25AC1C4400B80EA8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				A23BFF7F25AC2F5C00B80EA8 /* shader_res in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +48,11 @@
 		A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		A23BFF5525AC00B300B80EA8 /* shader1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shader1; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23BFF5725AC00B300B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A23BFF6D25AC1C4400B80EA8 /* shader_global */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shader_global; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23BFF6F25AC1C4400B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		A23BFF7525AC1C7E00B80EA8 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; path = Shader.hpp; sourceTree = "<group>"; };
+		A23BFF7825AC295D00B80EA8 /* shader_res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shader_res; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,14 +65,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A23BFF6A25AC1C4400B80EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23BFF7C25AC2D0D00B80EA8 /* OpenGL.framework in Frameworks */,
+				A23BFF7D25AC2D1000B80EA8 /* libglfw.3.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A23BFEF525A7243900B80EA8 = {
 			isa = PBXGroup;
 			children = (
+				A23BFF7825AC295D00B80EA8 /* shader_res */,
 				A23BFF2525A80D0C00B80EA8 /* common */,
 				A23BFF5625AC00B300B80EA8 /* shader1 */,
+				A23BFF6E25AC1C4400B80EA8 /* shader_global */,
 				A23BFEFF25A7243900B80EA8 /* Products */,
 				A23BFF0825A729BD00B80EA8 /* Frameworks */,
 			);
@@ -60,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A23BFF5525AC00B300B80EA8 /* shader1 */,
+				A23BFF6D25AC1C4400B80EA8 /* shader_global */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				A23BFF0F25A72A4200B80EA8 /* glad.c */,
+				A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */,
+				A23BFF7525AC1C7E00B80EA8 /* Shader.hpp */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -87,6 +123,14 @@
 				A23BFF5725AC00B300B80EA8 /* main.cpp */,
 			);
 			path = shader1;
+			sourceTree = "<group>";
+		};
+		A23BFF6E25AC1C4400B80EA8 /* shader_global */ = {
+			isa = PBXGroup;
+			children = (
+				A23BFF6F25AC1C4400B80EA8 /* main.cpp */,
+			);
+			path = shader_global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +153,23 @@
 			productReference = A23BFF5525AC00B300B80EA8 /* shader1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A23BFF6C25AC1C4400B80EA8 /* shader_global */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23BFF7125AC1C4400B80EA8 /* Build configuration list for PBXNativeTarget "shader_global" */;
+			buildPhases = (
+				A23BFF6925AC1C4400B80EA8 /* Sources */,
+				A23BFF6A25AC1C4400B80EA8 /* Frameworks */,
+				A23BFF6B25AC1C4400B80EA8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shader_global;
+			productName = shader_global;
+			productReference = A23BFF6D25AC1C4400B80EA8 /* shader_global */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -119,6 +180,9 @@
 				ORGANIZATIONNAME = zyqiosexercise;
 				TargetAttributes = {
 					A23BFF5425AC00B300B80EA8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					A23BFF6C25AC1C4400B80EA8 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -137,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				A23BFF5425AC00B300B80EA8 /* shader1 */,
+				A23BFF6C25AC1C4400B80EA8 /* shader_global */,
 			);
 		};
 /* End PBXProject section */
@@ -147,7 +212,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23BFF5C25AC029D00B80EA8 /* glad.c in Sources */,
+				A23BFF7625AC1C7E00B80EA8 /* Shader.cpp in Sources */,
 				A23BFF5825AC00B300B80EA8 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23BFF6925AC1C4400B80EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23BFF7925AC2CF500B80EA8 /* glad.c in Sources */,
+				A23BFF7A25AC2CF500B80EA8 /* Shader.cpp in Sources */,
+				A23BFF7025AC1C4400B80EA8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +280,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(SRCROOT)",
+				);
 				LIBRARY_SEARCH_PATHS = "/usr/local/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -258,7 +337,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(SRCROOT)",
+				);
 				LIBRARY_SEARCH_PATHS = "/usr/local/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -283,6 +365,22 @@
 			};
 			name = Release;
 		};
+		A23BFF7225AC1C4400B80EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A23BFF7325AC1C4400B80EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +398,15 @@
 			buildConfigurations = (
 				A23BFF5925AC00B300B80EA8 /* Debug */,
 				A23BFF5A25AC00B300B80EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23BFF7125AC1C4400B80EA8 /* Build configuration list for PBXNativeTarget "shader_global" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23BFF7225AC1C4400B80EA8 /* Debug */,
+				A23BFF7325AC1C4400B80EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A23BFF0225A7243900B80EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0125A7243900B80EA8 /* main.cpp */; };
-		A23BFF0A25A729BD00B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
-		A23BFF0C25A72A0F00B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0B25A72A0F00B80EA8 /* libglfw.3.3.dylib */; };
-		A23BFF1025A72A4200B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A23BFF5825AC00B300B80EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF5725AC00B300B80EA8 /* main.cpp */; };
+		A23BFF5C25AC029D00B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A23BFF6725AC043700B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A23BFF6825AC043D00B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A23BFEFC25A7243900B80EA8 /* CopyFiles */ = {
+		A23BFF5325AC00B300B80EA8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,25 +26,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A23BFEFE25A7243900B80EA8 /* opengl1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl1; sourceTree = BUILT_PRODUCTS_DIR; };
-		A23BFF0125A7243900B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A23BFF0925A729BD00B80EA8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		A23BFF0B25A72A0F00B80EA8 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		A23BFF0D25A72A1500B80EA8 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		A23BFF0F25A72A4200B80EA8 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		A23BFF1F25A80CD100B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		A23BFF3B25A8720700B80EA8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = main.cpp; sourceTree = "<group>"; usesTabs = 0; };
-		A23BFF4925ABF0DF00B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A23BFF5525AC00B300B80EA8 /* shader1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shader1; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23BFF5725AC00B300B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A23BFEFB25A7243900B80EA8 /* Frameworks */ = {
+		A23BFF5225AC00B300B80EA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23BFF0A25A729BD00B80EA8 /* OpenGL.framework in Frameworks */,
-				A23BFF0C25A72A0F00B80EA8 /* libglfw.3.3.dylib in Frameworks */,
+				A23BFF6725AC043700B80EA8 /* OpenGL.framework in Frameworks */,
+				A23BFF6825AC043D00B80EA8 /* libglfw.3.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,10 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				A23BFF2525A80D0C00B80EA8 /* common */,
-				A23BFF0025A7243900B80EA8 /* opengl1 */,
-				A23BFF1E25A80CD100B80EA8 /* opengl2 */,
-				A23BFF3A25A8720700B80EA8 /* opengl3 */,
-				A23BFF4825ABF0DF00B80EA8 /* opengl13 */,
+				A23BFF5625AC00B300B80EA8 /* shader1 */,
 				A23BFEFF25A7243900B80EA8 /* Products */,
 				A23BFF0825A729BD00B80EA8 /* Frameworks */,
 			);
@@ -67,36 +59,18 @@
 		A23BFEFF25A7243900B80EA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A23BFEFE25A7243900B80EA8 /* opengl1 */,
+				A23BFF5525AC00B300B80EA8 /* shader1 */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A23BFF0025A7243900B80EA8 /* opengl1 */ = {
-			isa = PBXGroup;
-			children = (
-				A23BFF0125A7243900B80EA8 /* main.cpp */,
-			);
-			path = opengl1;
 			sourceTree = "<group>";
 		};
 		A23BFF0825A729BD00B80EA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */,
-				A23BFF0D25A72A1500B80EA8 /* libGLEW.2.1.0.dylib */,
-				A23BFF0B25A72A0F00B80EA8 /* libglfw.3.3.dylib */,
 				A23BFF0925A729BD00B80EA8 /* OpenGL.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A23BFF1E25A80CD100B80EA8 /* opengl2 */ = {
-			isa = PBXGroup;
-			children = (
-				A23BFF1F25A80CD100B80EA8 /* main.cpp */,
-			);
-			path = opengl2;
 			sourceTree = "<group>";
 		};
 		A23BFF2525A80D0C00B80EA8 /* common */ = {
@@ -107,40 +81,32 @@
 			path = common;
 			sourceTree = "<group>";
 		};
-		A23BFF3A25A8720700B80EA8 /* opengl3 */ = {
+		A23BFF5625AC00B300B80EA8 /* shader1 */ = {
 			isa = PBXGroup;
 			children = (
-				A23BFF3B25A8720700B80EA8 /* main.cpp */,
+				A23BFF5725AC00B300B80EA8 /* main.cpp */,
 			);
-			path = opengl3;
-			sourceTree = "<group>";
-		};
-		A23BFF4825ABF0DF00B80EA8 /* opengl13 */ = {
-			isa = PBXGroup;
-			children = (
-				A23BFF4925ABF0DF00B80EA8 /* main.cpp */,
-			);
-			path = opengl13;
+			path = shader1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A23BFEFD25A7243900B80EA8 /* opengl1 */ = {
+		A23BFF5425AC00B300B80EA8 /* shader1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A23BFF0525A7243900B80EA8 /* Build configuration list for PBXNativeTarget "opengl1" */;
+			buildConfigurationList = A23BFF5B25AC00B300B80EA8 /* Build configuration list for PBXNativeTarget "shader1" */;
 			buildPhases = (
-				A23BFEFA25A7243900B80EA8 /* Sources */,
-				A23BFEFB25A7243900B80EA8 /* Frameworks */,
-				A23BFEFC25A7243900B80EA8 /* CopyFiles */,
+				A23BFF5125AC00B300B80EA8 /* Sources */,
+				A23BFF5225AC00B300B80EA8 /* Frameworks */,
+				A23BFF5325AC00B300B80EA8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = opengl1;
-			productName = opengl1;
-			productReference = A23BFEFE25A7243900B80EA8 /* opengl1 */;
+			name = shader1;
+			productName = shader1;
+			productReference = A23BFF5525AC00B300B80EA8 /* shader1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -152,12 +118,12 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = zyqiosexercise;
 				TargetAttributes = {
-					A23BFEFD25A7243900B80EA8 = {
+					A23BFF5425AC00B300B80EA8 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
-			buildConfigurationList = A23BFEF925A7243900B80EA8 /* Build configuration list for PBXProject "opengl1" */;
+			buildConfigurationList = A23BFEF925A7243900B80EA8 /* Build configuration list for PBXProject "shader" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -170,18 +136,18 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A23BFEFD25A7243900B80EA8 /* opengl1 */,
+				A23BFF5425AC00B300B80EA8 /* shader1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A23BFEFA25A7243900B80EA8 /* Sources */ = {
+		A23BFF5125AC00B300B80EA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23BFF0225A7243900B80EA8 /* main.cpp in Sources */,
-				A23BFF1025A72A4200B80EA8 /* glad.c in Sources */,
+				A23BFF5C25AC029D00B80EA8 /* glad.c in Sources */,
+				A23BFF5825AC00B300B80EA8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +267,7 @@
 			};
 			name = Release;
 		};
-		A23BFF0625A7243900B80EA8 /* Debug */ = {
+		A23BFF5925AC00B300B80EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +275,7 @@
 			};
 			name = Debug;
 		};
-		A23BFF0725A7243900B80EA8 /* Release */ = {
+		A23BFF5A25AC00B300B80EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -320,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A23BFEF925A7243900B80EA8 /* Build configuration list for PBXProject "opengl1" */ = {
+		A23BFEF925A7243900B80EA8 /* Build configuration list for PBXProject "shader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A23BFF0325A7243900B80EA8 /* Debug */,
@@ -329,11 +295,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A23BFF0525A7243900B80EA8 /* Build configuration list for PBXNativeTarget "opengl1" */ = {
+		A23BFF5B25AC00B300B80EA8 /* Build configuration list for PBXNativeTarget "shader1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A23BFF0625A7243900B80EA8 /* Debug */,
-				A23BFF0725A7243900B80EA8 /* Release */,
+				A23BFF5925AC00B300B80EA8 /* Debug */,
+				A23BFF5A25AC00B300B80EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

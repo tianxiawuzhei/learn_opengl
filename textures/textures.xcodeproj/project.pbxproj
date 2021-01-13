@@ -14,6 +14,13 @@
 		A23BFFB525AD43EB00B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
 		A23BFFB625AD43F200B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
 		A23BFFB725AD4FA600B80EA8 /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
+		A23BFFBF25ADA13A00B80EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFBE25ADA13A00B80EA8 /* main.cpp */; };
+		A23BFFC325ADA14400B80EA8 /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
+		A23BFFC425ADA14F00B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A23BFFC525ADA15000B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
+		A23BFFC625ADA15B00B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A23BFFC725ADA15B00B80EA8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
+		A23BFFC825ADA15B00B80EA8 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +31,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				A23BFFB725AD4FA600B80EA8 /* shader_res in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23BFFBA25ADA13A00B80EA8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				A23BFFC325ADA14400B80EA8 /* shader_res in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 		A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
 		A23BFFA625AD43A500B80EA8 /* texture_main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = texture_main; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23BFFA825AD43A500B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A23BFFBC25ADA13A00B80EA8 /* texture_two */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = texture_two; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23BFFBE25ADA13A00B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A23BFFB925ADA13A00B80EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23BFFC425ADA14F00B80EA8 /* OpenGL.framework in Frameworks */,
+				A23BFFC525ADA15000B80EA8 /* libglfw.3.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +89,7 @@
 				A23BFF7825AC295D00B80EA8 /* shader_res */,
 				A23BFF2525A80D0C00B80EA8 /* common */,
 				A23BFFA725AD43A500B80EA8 /* texture_main */,
+				A23BFFBD25ADA13A00B80EA8 /* texture_two */,
 				A23BFEFF25A7243900B80EA8 /* Products */,
 				A23BFF0825A729BD00B80EA8 /* Frameworks */,
 			);
@@ -70,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A23BFFA625AD43A500B80EA8 /* texture_main */,
+				A23BFFBC25ADA13A00B80EA8 /* texture_two */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +133,14 @@
 			path = texture_main;
 			sourceTree = "<group>";
 		};
+		A23BFFBD25ADA13A00B80EA8 /* texture_two */ = {
+			isa = PBXGroup;
+			children = (
+				A23BFFBE25ADA13A00B80EA8 /* main.cpp */,
+			);
+			path = texture_two;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +161,23 @@
 			productReference = A23BFFA625AD43A500B80EA8 /* texture_main */;
 			productType = "com.apple.product-type.tool";
 		};
+		A23BFFBB25ADA13A00B80EA8 /* texture_two */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23BFFC025ADA13A00B80EA8 /* Build configuration list for PBXNativeTarget "texture_two" */;
+			buildPhases = (
+				A23BFFB825ADA13A00B80EA8 /* Sources */,
+				A23BFFB925ADA13A00B80EA8 /* Frameworks */,
+				A23BFFBA25ADA13A00B80EA8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = texture_two;
+			productName = texture_two;
+			productReference = A23BFFBC25ADA13A00B80EA8 /* texture_two */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +188,9 @@
 				ORGANIZATIONNAME = zyqiosexercise;
 				TargetAttributes = {
 					A23BFFA525AD43A500B80EA8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					A23BFFBB25ADA13A00B80EA8 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -151,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				A23BFFA525AD43A500B80EA8 /* texture_main */,
+				A23BFFBB25ADA13A00B80EA8 /* texture_two */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +223,17 @@
 				A23BFFAE25AD43BD00B80EA8 /* Shader.cpp in Sources */,
 				A23BFFAF25AD43BD00B80EA8 /* stb_image.cpp in Sources */,
 				A23BFFA925AD43A500B80EA8 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23BFFB825ADA13A00B80EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23BFFC625ADA15B00B80EA8 /* glad.c in Sources */,
+				A23BFFC725ADA15B00B80EA8 /* Shader.cpp in Sources */,
+				A23BFFC825ADA15B00B80EA8 /* stb_image.cpp in Sources */,
+				A23BFFBF25ADA13A00B80EA8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +375,22 @@
 			};
 			name = Release;
 		};
+		A23BFFC125ADA13A00B80EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A23BFFC225ADA13A00B80EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +408,15 @@
 			buildConfigurations = (
 				A23BFFAB25AD43A500B80EA8 /* Debug */,
 				A23BFFAC25AD43A500B80EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23BFFC025ADA13A00B80EA8 /* Build configuration list for PBXNativeTarget "texture_two" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23BFFC125ADA13A00B80EA8 /* Debug */,
+				A23BFFC225ADA13A00B80EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A23B000025AFE9E300B80EA8 /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
 		A23BFFA925AD43A500B80EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA825AD43A500B80EA8 /* main.cpp */; };
 		A23BFFAD25AD43BD00B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
 		A23BFFAE25AD43BD00B80EA8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
@@ -34,6 +35,13 @@
 		A23BFFEC25AFE57000B80EA8 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
 		A23BFFED25AFE57400B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
 		A23BFFEE25AFE57600B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A23BFFF625AFE96A00B80EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFF525AFE96A00B80EA8 /* main.cpp */; };
+		A23BFFFA25AFE97200B80EA8 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
+		A23BFFFB25AFE97300B80EA8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A23BFFFC25AFE98F00B80EA8 /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
+		A23BFFFD25AFE9DA00B80EA8 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A23BFFFE25AFE9DA00B80EA8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
+		A23BFFFF25AFE9DA00B80EA8 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,12 +77,23 @@
 		};
 		A23BFFE125AFE56300B80EA8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				A23BFFFC25AFE98F00B80EA8 /* shader_res in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23BFFF125AFE96A00B80EA8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				A23B000025AFE9E300B80EA8 /* shader_res in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -95,6 +114,8 @@
 		A23BFFCF25AE93EC00B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A23BFFE325AFE56300B80EA8 /* exercise2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exercise2; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23BFFE525AFE56300B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A23BFFF325AFE96A00B80EA8 /* exercise3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exercise3; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23BFFF525AFE96A00B80EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +155,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A23BFFF025AFE96A00B80EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23BFFFA25AFE97200B80EA8 /* libglfw.3.3.dylib in Frameworks */,
+				A23BFFFB25AFE97300B80EA8 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -146,6 +176,7 @@
 				A23BFFBD25ADA13A00B80EA8 /* texture_two */,
 				A23BFFCE25AE93EC00B80EA8 /* exercise1 */,
 				A23BFFE425AFE56300B80EA8 /* exercise2 */,
+				A23BFFF425AFE96A00B80EA8 /* exercise3 */,
 				A23BFEFF25A7243900B80EA8 /* Products */,
 				A23BFF0825A729BD00B80EA8 /* Frameworks */,
 			);
@@ -158,6 +189,7 @@
 				A23BFFBC25ADA13A00B80EA8 /* texture_two */,
 				A23BFFCD25AE93EC00B80EA8 /* exercise1 */,
 				A23BFFE325AFE56300B80EA8 /* exercise2 */,
+				A23BFFF325AFE96A00B80EA8 /* exercise3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +245,14 @@
 				A23BFFE525AFE56300B80EA8 /* main.cpp */,
 			);
 			path = exercise2;
+			sourceTree = "<group>";
+		};
+		A23BFFF425AFE96A00B80EA8 /* exercise3 */ = {
+			isa = PBXGroup;
+			children = (
+				A23BFFF525AFE96A00B80EA8 /* main.cpp */,
+			);
+			path = exercise3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +326,23 @@
 			productReference = A23BFFE325AFE56300B80EA8 /* exercise2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		A23BFFF225AFE96A00B80EA8 /* exercise3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23BFFF725AFE96A00B80EA8 /* Build configuration list for PBXNativeTarget "exercise3" */;
+			buildPhases = (
+				A23BFFEF25AFE96A00B80EA8 /* Sources */,
+				A23BFFF025AFE96A00B80EA8 /* Frameworks */,
+				A23BFFF125AFE96A00B80EA8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = exercise3;
+			productName = exercise3;
+			productReference = A23BFFF325AFE96A00B80EA8 /* exercise3 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -307,6 +364,9 @@
 					A23BFFE225AFE56300B80EA8 = {
 						CreatedOnToolsVersion = 11.1;
 					};
+					A23BFFF225AFE96A00B80EA8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
 				};
 			};
 			buildConfigurationList = A23BFEF925A7243900B80EA8 /* Build configuration list for PBXProject "textures" */;
@@ -326,6 +386,7 @@
 				A23BFFBB25ADA13A00B80EA8 /* texture_two */,
 				A23BFFCC25AE93EC00B80EA8 /* exercise1 */,
 				A23BFFE225AFE56300B80EA8 /* exercise2 */,
+				A23BFFF225AFE96A00B80EA8 /* exercise3 */,
 			);
 		};
 /* End PBXProject section */
@@ -372,6 +433,17 @@
 				A23BFFEB25AFE57000B80EA8 /* Shader.cpp in Sources */,
 				A23BFFEC25AFE57000B80EA8 /* stb_image.cpp in Sources */,
 				A23BFFE625AFE56300B80EA8 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23BFFEF25AFE96A00B80EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23BFFFD25AFE9DA00B80EA8 /* glad.c in Sources */,
+				A23BFFFE25AFE9DA00B80EA8 /* Shader.cpp in Sources */,
+				A23BFFFF25AFE9DA00B80EA8 /* stb_image.cpp in Sources */,
+				A23BFFF625AFE96A00B80EA8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +633,22 @@
 			};
 			name = Release;
 		};
+		A23BFFF825AFE96A00B80EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A23BFFF925AFE96A00B80EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,6 +693,15 @@
 			buildConfigurations = (
 				A23BFFE825AFE56300B80EA8 /* Debug */,
 				A23BFFE925AFE56300B80EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23BFFF725AFE96A00B80EA8 /* Build configuration list for PBXNativeTarget "exercise3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23BFFF825AFE96A00B80EA8 /* Debug */,
+				A23BFFF925AFE96A00B80EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

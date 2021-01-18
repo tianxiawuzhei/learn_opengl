@@ -4,6 +4,8 @@
 
  让我们来旋转和缩放之前教程中的那个箱子。首先我们把箱子逆时针旋转90度。然后缩放0.5倍，使它变成原来的一半大
  
+ 参考：
+ https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/5.1.transformations/transformations.cpp
  */
 
 #include <glad/glad.h>
@@ -152,7 +154,6 @@ int main()
     }
     stbi_image_free(data2);
 
-
     shader->use(); // 不要忘记在设置uniform变量之前激活着色器程序！
     glUniform1i(glGetUniformLocation(shader->ID, "texture1"), 0); // 手动设置
     shader->setInt("texture2", 1); // 或者使用着色器类设置
@@ -160,7 +161,9 @@ int main()
     // uncomment this call to draw in wireframe polygons.
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 //    glm::mat4 trans =  glm::mat4(1.0f);
-//    trans = glm::rotate(trans, glm::radians(180.0f), glm::vec3(0.0, 0.0, 1.0));
+//    trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0));
+//    trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+    
 //    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
     
 //    unsigned int transformLoc = glGetUniformLocation(shader->ID, "transform");
@@ -181,8 +184,8 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         glm::mat4 trans = glm::mat4(1.0f);
-        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
         trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
         
         // draw our first triangle
         shader->use();
@@ -196,6 +199,17 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture2);
         
         glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        
+        
+    //https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/5.2.transformations_exercise2/transformations_exercise2.cpp
+        glm::mat4 trans1 = glm::mat4(1.0f);
+        trans1 = glm::translate(trans1, glm::vec3(-0.5f, 0.5f, 0.0f));
+        trans1 = glm::scale(trans1, glm::vec3(glm::sin((float)glfwGetTime()),glm::sin((float)glfwGetTime()),glm::sin((float)glfwGetTime())));
+          
+          
+          // draw our first triangle
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans1));
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         // glBindVertexArray(0); // no need to unbind it every time
  

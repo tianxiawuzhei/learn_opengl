@@ -238,10 +238,10 @@ int main()
         
         glm::mat4 view = glm::mat4(1.0f);
         // 注意，我们将矩阵向我们要进行移动场景的反方向移动。
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -10.0f));
         
         glm::mat4 projection = glm::mat4(1.0f);
-        projection = glm::perspective(glm::radians(45.0f), (float)4.0 / 1.0f, 0.1f, 100.0f);
+        projection = glm::perspective(glm::radians(45.0f), (float)4.0 / 3.0f, 0.1f, 100.0f);
         
         // draw our first triangle
         shader->use();

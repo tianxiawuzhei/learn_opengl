@@ -14,6 +14,13 @@
 		A28869C325B82F4C00782AFE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
 		A28869C425B82F4C00782AFE /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
 		A28869C525B82F4C00782AFE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
+		A28869CD25B831AE00782AFE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A28869CC25B831AE00782AFE /* main.cpp */; };
+		A28869D125B831B200782AFE /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
+		A28869D225B831B300782AFE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A28869D325B831B900782AFE /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
+		A28869D425B831BF00782AFE /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A28869D525B831BF00782AFE /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
+		A28869D625B831BF00782AFE /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +31,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				A28869C225B82F4200782AFE /* shader_res in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28869C825B831AE00782AFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				A28869D325B831B900782AFE /* shader_res in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 		A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
 		A28869B925B82F3100782AFE /* camera_lookAt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = camera_lookAt; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28869BB25B82F3100782AFE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A28869CA25B831AE00782AFE /* camera_move */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = camera_move; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28869CC25B831AE00782AFE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A28869C725B831AE00782AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28869D125B831B200782AFE /* libglfw.3.3.dylib in Frameworks */,
+				A28869D225B831B300782AFE /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +89,7 @@
 				A23BFF7825AC295D00B80EA8 /* shader_res */,
 				A23BFF2525A80D0C00B80EA8 /* common */,
 				A28869BA25B82F3100782AFE /* camera_lookAt */,
+				A28869CB25B831AE00782AFE /* camera_move */,
 				A23BFEFF25A7243900B80EA8 /* Products */,
 				A23BFF0825A729BD00B80EA8 /* Frameworks */,
 			);
@@ -70,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A28869B925B82F3100782AFE /* camera_lookAt */,
+				A28869CA25B831AE00782AFE /* camera_move */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +133,14 @@
 			path = camera_lookAt;
 			sourceTree = "<group>";
 		};
+		A28869CB25B831AE00782AFE /* camera_move */ = {
+			isa = PBXGroup;
+			children = (
+				A28869CC25B831AE00782AFE /* main.cpp */,
+			);
+			path = camera_move;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +161,23 @@
 			productReference = A28869B925B82F3100782AFE /* camera_lookAt */;
 			productType = "com.apple.product-type.tool";
 		};
+		A28869C925B831AE00782AFE /* camera_move */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28869CE25B831AE00782AFE /* Build configuration list for PBXNativeTarget "camera_move" */;
+			buildPhases = (
+				A28869C625B831AE00782AFE /* Sources */,
+				A28869C725B831AE00782AFE /* Frameworks */,
+				A28869C825B831AE00782AFE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = camera_move;
+			productName = camera_move;
+			productReference = A28869CA25B831AE00782AFE /* camera_move */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +188,9 @@
 				ORGANIZATIONNAME = zyqiosexercise;
 				TargetAttributes = {
 					A28869B825B82F3100782AFE = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					A28869C925B831AE00782AFE = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -151,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				A28869B825B82F3100782AFE /* camera_lookAt */,
+				A28869C925B831AE00782AFE /* camera_move */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +223,17 @@
 				A28869C425B82F4C00782AFE /* Shader.cpp in Sources */,
 				A28869C525B82F4C00782AFE /* stb_image.cpp in Sources */,
 				A28869BC25B82F3100782AFE /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28869C625B831AE00782AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28869D425B831BF00782AFE /* glad.c in Sources */,
+				A28869D525B831BF00782AFE /* Shader.cpp in Sources */,
+				A28869D625B831BF00782AFE /* stb_image.cpp in Sources */,
+				A28869CD25B831AE00782AFE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +375,22 @@
 			};
 			name = Release;
 		};
+		A28869CF25B831AE00782AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A28869D025B831AE00782AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +408,15 @@
 			buildConfigurations = (
 				A28869BE25B82F3100782AFE /* Debug */,
 				A28869BF25B82F3100782AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28869CE25B831AE00782AFE /* Build configuration list for PBXNativeTarget "camera_move" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28869CF25B831AE00782AFE /* Debug */,
+				A28869D025B831AE00782AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

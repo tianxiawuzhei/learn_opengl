@@ -2,6 +2,8 @@
  基础光照
  https://learnopengl-cn.github.io/02%20Lighting/02%20Basic%20Lighting/
  
+ https://learnopengl.com/code_viewer_gh.php?code=src/2.lighting/2.2.basic_lighting_specular/basic_lighting_specular.cpp
+ 
  */
 
 #include <glad/glad.h>
@@ -199,6 +201,7 @@ int main()
         lightingShader->setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         lightingShader->setVec3("lightColor",  1.0f, 1.0f, 1.0f);
         lightingShader->setVec3("lightPos", lightPos);
+        lightingShader->setVec3("viewPos", camera.Position);
 
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);

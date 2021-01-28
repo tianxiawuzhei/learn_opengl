@@ -1,10 +1,8 @@
 /*
- 基础光照:练习1
+ 基础光照:练习2
 https://learnopengl-cn.github.io/02%20Lighting/02%20Basic%20Lighting/
  
-https://learnopengl.com/code_viewer.php?code=lighting/basic_lighting-exercise1
- 
- */
+*/
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -305,6 +303,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }
+
 
 
 

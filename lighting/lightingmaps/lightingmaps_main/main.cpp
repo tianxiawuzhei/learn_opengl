@@ -1,8 +1,8 @@
 /*
- 材质
- https://learnopengl-cn.github.io/02%20Lighting/03%20Materials/
+ 光照贴图
+ https://learnopengl-cn.github.io/02%20Lighting/04%20Lighting%20maps/
  
- https://learnopengl.com/code_viewer_gh.php?code=src/2.lighting/3.1.materials/materials.cpp
+https://learnopengl.com/code_viewer_gh.php?code=src/2.lighting/4.1.lighting_maps_diffuse_map/lighting_maps_diffuse.cpp
  
  */
 
@@ -214,22 +214,13 @@ int main()
         lightingShader->use();
         lightingShader->setVec3("viewPos", camera.Position);
         
-        
-        lightingShader->setInt("material.diffuse", 0);
-        lightingShader->setVec3("material.specular", 0.5f, 0.5f, 0.5f);
-        lightingShader->setFloat("material.shininess", 32.0f);
-        
-        glm::vec3 lightColor;
-        lightColor.x = sin(glfwGetTime() * 2.0f);
-        lightColor.y = sin(glfwGetTime() * 0.7f);
-        lightColor.z = sin(glfwGetTime() * 1.3f);
-
-        glm::vec3 diffuseColor = lightColor   * glm::vec3(0.5f); // 降低影响
-        glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // 很低的影响
-
         lightingShader->setVec3("light.position", lightPos);
-        lightingShader->setVec3("light.ambient", ambientColor);
-        lightingShader->setVec3("light.diffuse", diffuseColor);
+        lightingShader->setVec3("material.specular", 1.0f, 1.0f, 1.0f);
+        lightingShader->setFloat("material.shininess", 256.0f);
+        
+       // light properties
+        lightingShader->setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
+        lightingShader->setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
         lightingShader->setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
         // view/projection transformations
@@ -240,6 +231,7 @@ int main()
 
         // world transformation
         glm::mat4 model = glm::mat4(1.0f);
+        model = glm::rotate(model, glm::radians(-38.0f), glm::vec3(1.0f, 1.0f, 0.0f));
         lightingShader->setMat4("model", model);
         
         glActiveTexture(GL_TEXTURE0);
@@ -253,10 +245,9 @@ int main()
         lampShader->use();
         lampShader->setMat4("view", view);
         lampShader->setMat4("projection", projection);
-        glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
         model = glm::mat4(1.0f);
         model = glm::translate(model, lightPos);
-        model = glm::scale(model, glm::vec3(0.2f));
+        model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
         lampShader->setMat4("model", model);
         
         // 绘制灯立方体对象

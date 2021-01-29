@@ -38,7 +38,7 @@ float lastFrame = 0.0f; // 上一帧的时间
 
 float fov = 45.0f;
 
-Camera camera(glm::vec3(0.0f, 0.0f, 6.0f));
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 
 // lamp pos
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
@@ -149,7 +149,7 @@ int main()
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3*sizeof(float)));
     glEnableVertexAttribArray(1);
     
-    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(5*sizeof(float)));
+    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6*sizeof(float)));
     glEnableVertexAttribArray(2);
     // second, configure the light's VAO (VBO stays the same; the vertices are the same for the light object which is also a 3D cube)
     unsigned int lightVAO;
@@ -184,11 +184,13 @@ int main()
     // load textures (we now use a utility function to keep the code more organized)
     // -----------------------------------------------------------------------------
     unsigned int diffuseMap = loadTexture("./shader_res/container2.png");
+    unsigned int specularMap = loadTexture("./shader_res/container2_specular.png");
     
     // shader configuration
       // --------------------
    lightingShader->use();
    lightingShader->setInt("material.diffuse", 0);
+    lightingShader->setInt("material.specular", 1);
     
     glEnable(GL_DEPTH_TEST);
     
@@ -215,11 +217,10 @@ int main()
         lightingShader->setVec3("viewPos", camera.Position);
         
         lightingShader->setVec3("light.position", lightPos);
-        lightingShader->setVec3("material.specular", 1.0f, 1.0f, 1.0f);
         lightingShader->setFloat("material.shininess", 256.0f);
         
        // light properties
-        lightingShader->setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
+        lightingShader->setVec3("light.ambient", 1.0f, 1.0f, 1.0f);
         lightingShader->setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
         lightingShader->setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
@@ -236,6 +237,9 @@ int main()
         
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, diffuseMap);
+        
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, specularMap);
         
         // render the cube
         glBindVertexArray(VAO);

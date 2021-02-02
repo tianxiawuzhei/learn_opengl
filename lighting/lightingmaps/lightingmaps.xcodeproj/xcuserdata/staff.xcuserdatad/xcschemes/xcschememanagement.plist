@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>lightingmaps_exercise_4.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>lightingmaps_main.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

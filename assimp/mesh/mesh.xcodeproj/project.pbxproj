@@ -7,92 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A23491C525CA43F3000F9D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23491C425CA43F3000F9D8A /* main.cpp */; };
-		A23491C925CA43FD000F9D8A /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
-		A23491CA25CA4402000F9D8A /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
-		A23491CB25CA4403000F9D8A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
-		A23491CC25CA4408000F9D8A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
-		A23491CD25CA4408000F9D8A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
-		A23491CE25CA4408000F9D8A /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
-		A23491E025CBE4A1000F9D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23491DF25CBE4A1000F9D8A /* main.cpp */; };
-		A23491E425CBE4A4000F9D8A /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
-		A23491E525CBE4A6000F9D8A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
-		A23491E625CBE4AC000F9D8A /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
-		A23491E725CBE4B2000F9D8A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
-		A23491E825CBE4B2000F9D8A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
-		A23491E925CBE4B2000F9D8A /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
-		A23491F125CBEBE7000F9D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23491F025CBEBE7000F9D8A /* main.cpp */; };
-		A23491F525CBEBEB000F9D8A /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
-		A23491F625CBEBEC000F9D8A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
-		A23491F725CBEBF1000F9D8A /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
-		A23491F825CBEBF6000F9D8A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
-		A23491F925CBEBF6000F9D8A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
-		A23491FA25CBEBF6000F9D8A /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
-		A234920225CBFC85000F9D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A234920125CBFC85000F9D8A /* main.cpp */; };
-		A234920625CBFC8B000F9D8A /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
-		A234920725CBFC90000F9D8A /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
-		A234920825CBFC92000F9D8A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
-		A234920925CBFC97000F9D8A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
-		A234920A25CBFC97000F9D8A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
-		A234920B25CBFC97000F9D8A /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
-		A234922925CD467D000F9D8A /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A234922725CD467D000F9D8A /* Mesh.cpp */; };
-		A234922F25CFBE06000F9D8A /* Mesh.hpp in Sources */ = {isa = PBXBuildFile; fileRef = A234922825CD467D000F9D8A /* Mesh.hpp */; };
+		A231166F25DE82FC009E54B1 /* shader_res in CopyFiles */ = {isa = PBXBuildFile; fileRef = A23BFF7825AC295D00B80EA8 /* shader_res */; };
+		A231167025DE87C9009E54B1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF0925A729BD00B80EA8 /* OpenGL.framework */; };
+		A231167125DE87CB009E54B1 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */; };
+		A231167325DE88C7009E54B1 /* libassimp.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A231167225DE88C7009E54B1 /* libassimp.5.0.0.dylib */; };
+		A234923725CFC302000F9D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A234923625CFC302000F9D8A /* main.cpp */; };
+		A234924025CFC360000F9D8A /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A234923E25CFC360000F9D8A /* Model.cpp */; };
+		A234924125CFC5F4000F9D8A /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF0F25A72A4200B80EA8 /* glad.c */; };
+		A234924225CFC5F4000F9D8A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFF7425AC1C7E00B80EA8 /* Shader.cpp */; };
+		A234924325CFC5F4000F9D8A /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A23BFFA125AD3E4500B80EA8 /* stb_image.cpp */; };
+		A234924425CFC5F4000F9D8A /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A234922725CD467D000F9D8A /* Mesh.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A23491C025CA43F3000F9D8A /* CopyFiles */ = {
+		A234923225CFC302000F9D8A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				A23491C925CA43FD000F9D8A /* shader_res in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491DB25CBE4A1000F9D8A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				A23491E625CBE4AC000F9D8A /* shader_res in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491EC25CBEBE7000F9D8A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				A23491F725CBEBF1000F9D8A /* shader_res in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491FD25CBFC85000F9D8A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				A234920625CBFC8B000F9D8A /* shader_res in CopyFiles */,
+				A231166F25DE82FC009E54B1 /* shader_res in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A23491C225CA43F3000F9D8A /* directional_light */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = directional_light; sourceTree = BUILT_PRODUCTS_DIR; };
-		A23491C425CA43F3000F9D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A23491DD25CBE4A1000F9D8A /* point_light */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = point_light; sourceTree = BUILT_PRODUCTS_DIR; };
-		A23491DF25CBE4A1000F9D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A23491EE25CBEBE7000F9D8A /* spot_light */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = spot_light; sourceTree = BUILT_PRODUCTS_DIR; };
-		A23491F025CBEBE7000F9D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		A23491FF25CBFC85000F9D8A /* spot_soften_light */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = spot_soften_light; sourceTree = BUILT_PRODUCTS_DIR; };
-		A234920125CBFC85000F9D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A231167225DE88C7009E54B1 /* libassimp.5.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.0.0.dylib; path = ../../../../../../../../usr/local/Cellar/assimp/5.0.1/lib/libassimp.5.0.0.dylib; sourceTree = "<group>"; };
 		A234922725CD467D000F9D8A /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
 		A234922825CD467D000F9D8A /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		A234923425CFC302000F9D8A /* assimp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = assimp; sourceTree = BUILT_PRODUCTS_DIR; };
+		A234923625CFC302000F9D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A234923E25CFC360000F9D8A /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		A234923F25CFC360000F9D8A /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
 		A23BFF0925A729BD00B80EA8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A23BFF0F25A72A4200B80EA8 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -105,75 +52,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A23491BF25CA43F3000F9D8A /* Frameworks */ = {
+		A234923125CFC302000F9D8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23491CA25CA4402000F9D8A /* libglfw.3.3.dylib in Frameworks */,
-				A23491CB25CA4403000F9D8A /* OpenGL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491DA25CBE4A1000F9D8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23491E425CBE4A4000F9D8A /* libglfw.3.3.dylib in Frameworks */,
-				A23491E525CBE4A6000F9D8A /* OpenGL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491EB25CBEBE7000F9D8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23491F525CBEBEB000F9D8A /* libglfw.3.3.dylib in Frameworks */,
-				A23491F625CBEBEC000F9D8A /* OpenGL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491FC25CBFC85000F9D8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A234920725CBFC90000F9D8A /* libglfw.3.3.dylib in Frameworks */,
-				A234920825CBFC92000F9D8A /* OpenGL.framework in Frameworks */,
+				A231167325DE88C7009E54B1 /* libassimp.5.0.0.dylib in Frameworks */,
+				A231167025DE87C9009E54B1 /* OpenGL.framework in Frameworks */,
+				A231167125DE87CB009E54B1 /* libglfw.3.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A23491C325CA43F3000F9D8A /* directional_light */ = {
+		A234923525CFC302000F9D8A /* assimp */ = {
 			isa = PBXGroup;
 			children = (
-				A23491C425CA43F3000F9D8A /* main.cpp */,
+				A234923625CFC302000F9D8A /* main.cpp */,
 			);
-			path = directional_light;
-			sourceTree = "<group>";
-		};
-		A23491DE25CBE4A1000F9D8A /* point_light */ = {
-			isa = PBXGroup;
-			children = (
-				A23491DF25CBE4A1000F9D8A /* main.cpp */,
-			);
-			path = point_light;
-			sourceTree = "<group>";
-		};
-		A23491EF25CBEBE7000F9D8A /* spot_light */ = {
-			isa = PBXGroup;
-			children = (
-				A23491F025CBEBE7000F9D8A /* main.cpp */,
-			);
-			path = spot_light;
-			sourceTree = "<group>";
-		};
-		A234920025CBFC85000F9D8A /* spot_soften_light */ = {
-			isa = PBXGroup;
-			children = (
-				A234920125CBFC85000F9D8A /* main.cpp */,
-			);
-			path = spot_soften_light;
+			path = assimp;
 			sourceTree = "<group>";
 		};
 		A23BFEF525A7243900B80EA8 = {
@@ -181,10 +78,7 @@
 			children = (
 				A23BFF7825AC295D00B80EA8 /* shader_res */,
 				A23BFF2525A80D0C00B80EA8 /* common */,
-				A23491C325CA43F3000F9D8A /* directional_light */,
-				A23491DE25CBE4A1000F9D8A /* point_light */,
-				A23491EF25CBEBE7000F9D8A /* spot_light */,
-				A234920025CBFC85000F9D8A /* spot_soften_light */,
+				A234923525CFC302000F9D8A /* assimp */,
 				A23BFEFF25A7243900B80EA8 /* Products */,
 				A23BFF0825A729BD00B80EA8 /* Frameworks */,
 			);
@@ -193,10 +87,7 @@
 		A23BFEFF25A7243900B80EA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A23491C225CA43F3000F9D8A /* directional_light */,
-				A23491DD25CBE4A1000F9D8A /* point_light */,
-				A23491EE25CBEBE7000F9D8A /* spot_light */,
-				A23491FF25CBFC85000F9D8A /* spot_soften_light */,
+				A234923425CFC302000F9D8A /* assimp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +95,7 @@
 		A23BFF0825A729BD00B80EA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A231167225DE88C7009E54B1 /* libassimp.5.0.0.dylib */,
 				A23BFF2725A8718300B80EA8 /* libglfw.3.3.dylib */,
 				A23BFF0925A729BD00B80EA8 /* OpenGL.framework */,
 			);
@@ -221,6 +113,8 @@
 				A2886A0E25B985E900782AFE /* Camera.h */,
 				A234922725CD467D000F9D8A /* Mesh.cpp */,
 				A234922825CD467D000F9D8A /* Mesh.hpp */,
+				A234923E25CFC360000F9D8A /* Model.cpp */,
+				A234923F25CFC360000F9D8A /* Model.hpp */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -228,72 +122,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A23491C125CA43F3000F9D8A /* directional_light */ = {
+		A234923325CFC302000F9D8A /* assimp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A23491C625CA43F3000F9D8A /* Build configuration list for PBXNativeTarget "directional_light" */;
+			buildConfigurationList = A234923825CFC302000F9D8A /* Build configuration list for PBXNativeTarget "assimp" */;
 			buildPhases = (
-				A23491BE25CA43F3000F9D8A /* Sources */,
-				A23491BF25CA43F3000F9D8A /* Frameworks */,
-				A23491C025CA43F3000F9D8A /* CopyFiles */,
+				A234923025CFC302000F9D8A /* Sources */,
+				A234923125CFC302000F9D8A /* Frameworks */,
+				A234923225CFC302000F9D8A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = directional_light;
-			productName = directional_light;
-			productReference = A23491C225CA43F3000F9D8A /* directional_light */;
-			productType = "com.apple.product-type.tool";
-		};
-		A23491DC25CBE4A1000F9D8A /* point_light */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A23491E325CBE4A1000F9D8A /* Build configuration list for PBXNativeTarget "point_light" */;
-			buildPhases = (
-				A23491D925CBE4A1000F9D8A /* Sources */,
-				A23491DA25CBE4A1000F9D8A /* Frameworks */,
-				A23491DB25CBE4A1000F9D8A /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = point_light;
-			productName = point_light;
-			productReference = A23491DD25CBE4A1000F9D8A /* point_light */;
-			productType = "com.apple.product-type.tool";
-		};
-		A23491ED25CBEBE7000F9D8A /* spot_light */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A23491F225CBEBE7000F9D8A /* Build configuration list for PBXNativeTarget "spot_light" */;
-			buildPhases = (
-				A23491EA25CBEBE7000F9D8A /* Sources */,
-				A23491EB25CBEBE7000F9D8A /* Frameworks */,
-				A23491EC25CBEBE7000F9D8A /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = spot_light;
-			productName = spot_light;
-			productReference = A23491EE25CBEBE7000F9D8A /* spot_light */;
-			productType = "com.apple.product-type.tool";
-		};
-		A23491FE25CBFC85000F9D8A /* spot_soften_light */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A234920325CBFC85000F9D8A /* Build configuration list for PBXNativeTarget "spot_soften_light" */;
-			buildPhases = (
-				A23491FB25CBFC85000F9D8A /* Sources */,
-				A23491FC25CBFC85000F9D8A /* Frameworks */,
-				A23491FD25CBFC85000F9D8A /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = spot_soften_light;
-			productName = spot_soften_light;
-			productReference = A23491FF25CBFC85000F9D8A /* spot_soften_light */;
+			name = assimp;
+			productName = assimp;
+			productReference = A234923425CFC302000F9D8A /* assimp */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -305,16 +148,7 @@
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = zyqiosexercise;
 				TargetAttributes = {
-					A23491C125CA43F3000F9D8A = {
-						CreatedOnToolsVersion = 11.1;
-					};
-					A23491DC25CBE4A1000F9D8A = {
-						CreatedOnToolsVersion = 11.1;
-					};
-					A23491ED25CBEBE7000F9D8A = {
-						CreatedOnToolsVersion = 11.1;
-					};
-					A23491FE25CBFC85000F9D8A = {
+					A234923325CFC302000F9D8A = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -332,124 +166,48 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A23491C125CA43F3000F9D8A /* directional_light */,
-				A23491DC25CBE4A1000F9D8A /* point_light */,
-				A23491ED25CBEBE7000F9D8A /* spot_light */,
-				A23491FE25CBFC85000F9D8A /* spot_soften_light */,
+				A234923325CFC302000F9D8A /* assimp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A23491BE25CA43F3000F9D8A /* Sources */ = {
+		A234923025CFC302000F9D8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23491CC25CA4408000F9D8A /* glad.c in Sources */,
-				A23491CD25CA4408000F9D8A /* Shader.cpp in Sources */,
-				A23491CE25CA4408000F9D8A /* stb_image.cpp in Sources */,
-				A23491C525CA43F3000F9D8A /* main.cpp in Sources */,
-				A234922925CD467D000F9D8A /* Mesh.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491D925CBE4A1000F9D8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23491E725CBE4B2000F9D8A /* glad.c in Sources */,
-				A23491E825CBE4B2000F9D8A /* Shader.cpp in Sources */,
-				A23491E925CBE4B2000F9D8A /* stb_image.cpp in Sources */,
-				A23491E025CBE4A1000F9D8A /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491EA25CBEBE7000F9D8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A23491F825CBEBF6000F9D8A /* glad.c in Sources */,
-				A23491F925CBEBF6000F9D8A /* Shader.cpp in Sources */,
-				A23491FA25CBEBF6000F9D8A /* stb_image.cpp in Sources */,
-				A23491F125CBEBE7000F9D8A /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A23491FB25CBFC85000F9D8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A234922F25CFBE06000F9D8A /* Mesh.hpp in Sources */,
-				A234920925CBFC97000F9D8A /* glad.c in Sources */,
-				A234920A25CBFC97000F9D8A /* Shader.cpp in Sources */,
-				A234920B25CBFC97000F9D8A /* stb_image.cpp in Sources */,
-				A234920225CBFC85000F9D8A /* main.cpp in Sources */,
+				A234924125CFC5F4000F9D8A /* glad.c in Sources */,
+				A234924225CFC5F4000F9D8A /* Shader.cpp in Sources */,
+				A234924325CFC5F4000F9D8A /* stb_image.cpp in Sources */,
+				A234924425CFC5F4000F9D8A /* Mesh.cpp in Sources */,
+				A234923725CFC302000F9D8A /* main.cpp in Sources */,
+				A234924025CFC360000F9D8A /* Model.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A23491C725CA43F3000F9D8A /* Debug */ = {
+		A234923925CFC302000F9D8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/assimp/5.0.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A23491C825CA43F3000F9D8A /* Release */ = {
+		A234923A25CFC302000F9D8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A23491E125CBE4A1000F9D8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A23491E225CBE4A1000F9D8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A23491F325CBEBE7000F9D8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A23491F425CBEBE7000F9D8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A234920425CBFC85000F9D8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A234920525CBFC85000F9D8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/assimp/5.0.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -576,38 +334,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A23491C625CA43F3000F9D8A /* Build configuration list for PBXNativeTarget "directional_light" */ = {
+		A234923825CFC302000F9D8A /* Build configuration list for PBXNativeTarget "assimp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A23491C725CA43F3000F9D8A /* Debug */,
-				A23491C825CA43F3000F9D8A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A23491E325CBE4A1000F9D8A /* Build configuration list for PBXNativeTarget "point_light" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A23491E125CBE4A1000F9D8A /* Debug */,
-				A23491E225CBE4A1000F9D8A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A23491F225CBEBE7000F9D8A /* Build configuration list for PBXNativeTarget "spot_light" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A23491F325CBEBE7000F9D8A /* Debug */,
-				A23491F425CBEBE7000F9D8A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A234920325CBFC85000F9D8A /* Build configuration list for PBXNativeTarget "spot_soften_light" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A234920425CBFC85000F9D8A /* Debug */,
-				A234920525CBFC85000F9D8A /* Release */,
+				A234923925CFC302000F9D8A /* Debug */,
+				A234923A25CFC302000F9D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

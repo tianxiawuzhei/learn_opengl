@@ -13,11 +13,15 @@
 #include <stdio.h>
 #include <vector>
 
-#include <Shader.hpp>
+#include <common/Shader.hpp>
 
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
 
 using namespace std;
 
@@ -38,6 +42,7 @@ struct Vertex {
 struct Texture {
     unsigned int id;
     string type;
+    string path;
 };
 
 class Mesh {
